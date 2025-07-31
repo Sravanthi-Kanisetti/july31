@@ -17,3 +17,29 @@ public class linearsearch
 	    return -1;
 	}
 }
+
+
+
+
+public class linearsearch
+{
+	public static void main(String[] args) {
+		int[] nums={11,22,33,44,55,66,77,88,99};
+		int target=75;
+		boolean result=linear(nums,target);
+		if (result==true){
+		    System.out.println("yeahhh the element is found");
+		}
+	    else{
+	        System.out.println("no the element is not present in list");
+	    }
+	}
+	
+	static boolean linear(int[] nums,int target){
+	    for(int i=0;i<nums.length;i++){
+	        if(nums[i]==target){
+	            return true;
+	        }
+	    }
+	    return false;
+	}
